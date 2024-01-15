@@ -1,0 +1,221 @@
+/*===========animations===================*/
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+*, html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+}
+
+.navigator {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  top: 0;
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  background-color: #fff;
+}
+
+.center {
+  margin: auto;
+}
+
+.right {
+  display: flex-end;
+  margin: auto;
+}
+
+.right i {
+  margin: 5px;
+}
+
+.links {
+  width: 100%;
+  height: 0;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.show-navbar {
+  height: 10rem;
+}
+
+.menu-links {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding-right: 50px;
+  border: #000 solid 2px;
+}
+
+.links li {
+  list-style: none;
+  padding: 0.3rem;
+}
+
+ul, a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+legend {
+  color: #000;
+  font-weight: 1000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  padding: 5px;
+  margin-top: 100px;
+}
+
+#myname {
+  animation: blink 3s infinite;
+  background-color: rgba(0, 255, 0, 0.9);
+}
+
+.profile-name {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.profile img {
+  width: 70px;
+  justify-content: center;
+  margin: auto auto;
+  border-radius: 50%;
+}
+
+.online {
+  position: relative;
+}
+
+.online::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: #41db51;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#about, #image {
+  border: 2px grey solid;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: inset;
+  margin: 5px;
+}
+
+#about {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+legend {
+  border-radius: 10px;
+  text-align: center;
+}
+
+.text {
+  font-family: cursive;
+  color: rgb(255, 0, 0);
+  font-size: inherit;
+  letter-spacing: 5px;
+  width: 100%;
+  white-space: nowwrap;
+  overflow: hidden;
+  animation: typing 10s steps(19) 1s forwards;
+}
+
+#image {
+  background-color: rgb(255, 255, 255);
+}
+
+.skills-space {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 100vh;
+}
+
+.projects {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.skiller, .project {
+  border: 2px solid grey;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: auto;
+}
+
+.contact-info {
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.labels {
+  border: 2px solid gray;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: auto;
+}
+
+input, textarea, #btn {
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  width: 80%;
+  border: gray solid 2px;
+  border-radius: 10px;
+}
+
+#btn {
+  background-color: rgb(0, 255, 0);
+  width: 40%;
+}
+
+label {
+  color: #000;
+}/*# sourceMappingURL=styles.css.map */
