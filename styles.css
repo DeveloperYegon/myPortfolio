@@ -32,7 +32,7 @@
 }
   
 }
-@media only screen (max-width:599px) {
+@media only screen and (max-width:599px) {
   .center{
     display: none;
   }
