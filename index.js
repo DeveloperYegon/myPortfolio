@@ -4,14 +4,14 @@ window.onload = function(){
     };
 const toggleBtn= document.querySelector(".nav-toggle");
 const submitBtn= document.getElementById("btn");
-const links =document.querySelector(".links");
-//console.log(toggleBtn);
-//console.log(document);
+const links =document.querySelector(".menu-links");
+// console.log(toggleBtn);
+// console.log(document);
 toggleBtn.addEventListener("click",()=>{
-    //console.log(toggleBtn);
+    // console.log(toggleBtn);
     //console.log(document);
     //toggleBtn.classList.contains("hi");
     //console.log(links.classList.contains("links"));
-    links.classList.toggle("show-navbar");
+    links.classList.toggle("show-sidebar");
 });
 //submitBtn.addEventListener("click",()=>{});
