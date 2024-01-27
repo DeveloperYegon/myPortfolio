@@ -38,6 +38,12 @@
   .center{
     display: none;
   }
+  .contact-info{
+    height: 40vh;
+  }
+  .skills-space{
+    height: 70vh;
+  }
   .right{
     display: flex;
     align-items: flex-end;
@@ -202,8 +208,9 @@ legend {
   text-align: center;
   vertical-align: middle;
 }
-.skiller img{
-  width: 150px;
+.skillimg{
+  margin: auto auto;
+  width: 70px;
   
 }
 .specific-skill{
@@ -216,7 +223,7 @@ legend {
 .skills-space {
   display: grid;
   grid-template-columns: auto auto;
-  height: 100vh;
+  height: 130vh;
 }
 
 .projects {
