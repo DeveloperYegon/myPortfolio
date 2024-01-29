@@ -38,6 +38,14 @@
                 <a href="#projects"><li>Projects</li></a>
                 <a href="#contact-me"><li>Contact-Me</li></a>
             </ul>
+            <div class="centered">
+                <a href="https://www.facebook.com/gideon.yegon.712714"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://twitter.com/_kipkoriryegon"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/developer-yegon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i> </a>
+                <a href="https://github.com/DeveloperYegon"><i class="fa-brands fa-github"></i></a>
+            </div>
         </aside>
    
     <!--=====================================main section========================-->
@@ -128,7 +136,9 @@
         <section class="contact-info"> 
             <!-- <a name="contact-me"><p class="section-head">Make and inquiry!!</p> </a> -->
               
-        <form align="center" action="includes/formhandler.php" method="post">
+        <form align="center" id="inquiery" action=""  >
+        <!-- method="post"
+                action="includes/formhandler.php"  -->
             <div class="labels">
                 <label class="labeler" for="name"> Name :</label>
                 <input type="text" id="name" required name="Full_Name" placeholder="Enter your name" autofocus>
@@ -139,7 +149,7 @@
             </div>
             <div class="labels">
                 <label class="labeler" for="tel">Phone Number: </label>
-                <input placeholder="+(254)000000000"  name="Phone_Number" type="tel">
+                <input placeholder="+(254)000000000" id="phoner" name="Phone_Number" type="tel">
             </div>
                 <div class="labels">
                 <label  class="labeler" id="textarea" for="textarea">Text message:</label>
@@ -155,5 +165,7 @@
     </fieldset>
  </main>
     <script src="index.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 </body>
 </html>

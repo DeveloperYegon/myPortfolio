@@ -82,9 +82,11 @@ body {
 .center a{
   padding: 5px;
 }
-i:hover{
+/* i:hover{
 background-color: #000;
-}
+} */
+
+
 a:hover{
  
   background-color: #6768ac;
@@ -154,7 +156,7 @@ main {
 
 
 .profile-name {
-  height: 80vh;
+  /* height: 80vh; */
   text-align: center;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
@@ -223,7 +225,7 @@ legend {
 .skills-space {
   display: grid;
   grid-template-columns: auto auto;
-  height: 130vh;
+  /* height: 130vh; */
 }
 
 .projects {
